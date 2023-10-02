@@ -1,0 +1,32 @@
+.footer1 {
+    background-color: var(--LightBlue);
+}
+
+.TopButton {
+    background-color: transparent;
+    border: 0;
+}
+
+.TopButton:hover {
+    background-color: var(--LightBlueHover);
+    width: 100%;
+}
+
+
+.footer2 {
+    background-color: var(--blue);
+}
+.social-icons {
+    cursor: pointer;
+}
+
+
+
+
+.footer3 {
+    background-color: var(--black);
+}
+
+
+
+

@@ -1,0 +1,14 @@
+.number{
+    border: solid var(--blue) 1px;
+    padding-top: 10px;
+    padding-right:20px;
+    padding-left: 20px;
+    padding-bottom: 2px;
+}
+.button{
+     background-color: var(--white); 
+     color: var(--black); 
+     border: solid var(--blue) 1px; 
+    width: 30px;
+    height: 30px;
+}

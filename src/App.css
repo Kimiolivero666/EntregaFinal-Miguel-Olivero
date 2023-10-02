@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+
+:root{
+  --black: #131921;
+  --white: #fff;
+  --yellow: #febd69;
+  --orange: #f3a847;
+  --blue: #232f3e;
+  --LightBlue: #37475a;
+  --LightBlueHover: #485769;
+}
+ 
+
+

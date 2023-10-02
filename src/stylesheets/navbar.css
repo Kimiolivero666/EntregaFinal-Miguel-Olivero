@@ -1,0 +1,112 @@
+.seeker {
+    background-color: var(--black);
+}
+
+.brand {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.searchButton {
+    background-color: var(--yellow);
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    border-color: var(--yellow);
+}
+
+.searchButton:hover {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.fa-magnifying-glass {
+    color: var(--black);
+}
+
+
+.cart-navbar {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.cart-navbar:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px var(--white); 
+    transition: 0.3s;
+}
+
+.user-navbar {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.user-navbar:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px var(--white); 
+    transition: 0.3s;
+}
+
+/* NAVBAR 2 */
+
+.navbar2 {
+    background-color: var(--blue);
+}
+
+.brand-navbar2{
+    padding-left: 20px;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.link{
+    padding-left: 20px;
+}
+
+.link:hover{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px var(--white);
+    transition: 0.3s; 
+}
+
+.cart-navbar2{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.cart-navbar2:hover{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px var(--white); 
+    transition: 0.3s; 
+}
+
+.user-navbar2{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.user-navbar2:hover{
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px var(--white); 
+    transition: 0.3s; 
+}
+
+
+.icon-navbar{
+   border: none;
+   color: transparent;
+}
+

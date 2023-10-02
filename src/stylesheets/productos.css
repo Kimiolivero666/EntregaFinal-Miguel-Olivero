@@ -1,0 +1,34 @@
+
+.item-list{ 
+     display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin: 0 -10px; 
+} 
+ 
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-card {
+    bottom: 10px;
+    text-align: center
+}
+
+.fuente{
+    font-size: 40px;
+}
+
+/* ITEM DETAIL */
+
+.img-detalle-producto{
+    border: solid var(--blue) 1px;
+}
+.descripcion{
+    font-size: 20px;
+}
+
+.precio-detail{
+    font-size: 30px;
+}

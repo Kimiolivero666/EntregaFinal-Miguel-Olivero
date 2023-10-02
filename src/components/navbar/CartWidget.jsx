@@ -2,7 +2,7 @@
 
 const CartWidget = () => {
   return (
-    <div><i className="fa-solid fa-bag-shopping"></i></div>
+    <div><i className="fas fa-shopping-cart"></i></div>
   )
 }
 
