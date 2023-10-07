@@ -31,4 +31,9 @@
 
 .precio-detail{
     font-size: 30px;
+   
+}
+.info{
+    font-size: 15px;
+    color: var(--LightBlueHover);
 }

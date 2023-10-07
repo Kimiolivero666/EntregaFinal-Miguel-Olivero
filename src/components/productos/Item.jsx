@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import '../../stylesheets/productos.css'
 
 
-const Item = ({ id, name, img, price, description,}) => {
+const Item = ({ id, name, img, price, stock,}) => {
   return (
     <div className="card-productos m-3">
     <Card style={{ width: '18rem', height: '80vh' }}>
@@ -11,7 +11,7 @@ const Item = ({ id, name, img, price, description,}) => {
       <Card.Body className='position-relative'>
         <Card.Title>{name}</Card.Title>
         <Card.Text className='mb-3'>
-          <p>{description}</p>
+          <p>productos en stock: {stock}</p>
           <p className='precio'>€{price}</p>
         </Card.Text>
         <Button href={`/item/${id}`} className='position-absolute btn-card ' variant="warning">Ver Detalle</Button>

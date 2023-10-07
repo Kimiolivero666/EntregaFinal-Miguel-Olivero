@@ -1,0 +1,42 @@
+
+
+.img-category{
+    width: 80%;
+    border: solid var(--LightBlueHover) 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 9%);
+}
+.img-category:hover{
+    transform: scale(1.05);
+    transition: .5s ease-out;
+}
+.title-category{
+    cursor: pointer;
+    color: var(--LightBlueHover);
+}
+
+
+.box{
+    background-color: var(--grey);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon{
+    color: var(--orange);
+    font-size: 32px;
+    margin-top: 10px;
+}
+.detail{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.detail h3{
+    color:var(--blue);
+    font-size:20px;
+}
+.detail p{
+    color: var(--LightBlueHover);
+}
