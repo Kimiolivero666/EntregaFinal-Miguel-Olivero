@@ -17,7 +17,9 @@
     color: var(--LightBlueHover);
 }
 
-
+.contenedor-cajas{
+    padding-top: 60px;
+}
 .box{
     background-color: var(--grey);
     border-radius: 5px;
@@ -39,4 +41,9 @@
 }
 .detail p{
     color: var(--LightBlueHover);
+}
+
+.contenedor-productos{
+    margin-right: 10%;
+    margin-left: 10%;
 }

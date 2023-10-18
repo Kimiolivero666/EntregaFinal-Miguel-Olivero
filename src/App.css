@@ -4,6 +4,7 @@
 }
 
 :root{
+  --yellow1: #ffc107;
   --black: #131921;
   --white: #fff;
   --yellow: #febd69;
@@ -11,6 +12,7 @@
   --blue: #232f3e;
   --LightBlue: #37475a;
   --LightBlueHover: #485769;
+  --darkGrey: #9a9a9a;
   --grey: #e9eff5;
 }
  

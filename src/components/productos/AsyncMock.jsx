@@ -2,7 +2,7 @@ import iphone from '../../assets/iphone12.jpg'
 import samsung from '../../assets/SamsungS23.jpg'
 import xiaomi from '../../assets/xiami13.jpg'
 import nokia from '../../assets/nokiaXR21.jpg'
-
+import tcl from '../../assets/tv.jpg'
 const products = [
     {
 id:'1',
@@ -16,7 +16,8 @@ description:'Apple iPhone 12, 64GB, rojo - desbloqueado (renovado prémium)'
 
     { id:'2', name: 'Samsung Galaxy S23', price: 759, category:'celular', img: samsung, stock: 18, description:'128GB + Cargador de 45W - Smartphone Android, Batería de 3900 mAh, Smartphone Desbloqueado, Color Negro (Versión Española)'},
     { id:'3', name: 'Xiaomi 13 Lite', price: 425, category:'celular', img: xiaomi, stock: 31, description:'Smartphone de 8+128GB, Pantalla de 6,55" AMOLED 120Hz , Snapdragon 7 Gen 1, triple cámara de 48MP, 4500 mAh, negro (Versión ES + 3 años de garantía)'},
-    { id:'4', name: 'Nokia XR21 5G', price: 581, category:'celular', img: nokia, stock: 19, description:'128GB + 6GB RAM gsm Unlocked Android Rugged Smart Phone'}
+    { id:'4', name: 'Nokia XR21 5G', price: 581, category:'celular', img: nokia, stock: 19, description:'128GB + 6GB RAM gsm Unlocked Android Rugged Smart Phone'},
+    { id:'5', name: 'TCL Smart TV', price: 179, category:'TvyAudio', img: tcl, stock: 15, description:'Class S3 1080p LED de 40 pulgadas con TV Roku (modelo 40S350R, modelo 2023), compatible con Alexa, Google Assistant y compatibilidad Apple HomeKit, transmisión de televisión FHD, color negro'},
 ]
 
 export const getProduct = () => {

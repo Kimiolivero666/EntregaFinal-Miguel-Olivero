@@ -1,0 +1,57 @@
+
+
+.container-cart{
+    border: solid var(--grey) 1px;
+}
+.title-cart{
+    font-size: 23px;
+}
+.title-precio-unitario{
+    color: var(--LightBlueHover); 
+}
+.precio-unitario{
+    font-size: 15px;
+    color: var(--LightBlueHover);
+}
+.eliminar-producto{
+    color:var(--yellow1);
+    background-color: transparent;
+    border: none;
+    
+}
+
+
+
+.img-cart{
+    width: 200px;
+}
+.precio-total-producto{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20PX;
+}
+
+.precio-total{
+    border: solid var(--grey) 1px; 
+}
+
+.option-cart{
+    background-color: var(--yellow1);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight:500;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+.total-pagar{
+    font-size: 20px;
+}
+.precio-total-pagar{
+    font-size: 30px;
+}

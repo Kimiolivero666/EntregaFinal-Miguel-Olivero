@@ -110,3 +110,16 @@
    color: transparent;
 }
 
+/* CARTWIDGET */
+
+.numbrer-cart{
+    color: var(--white);
+    top: -10px;
+    left: 5px;
+    font-weight: bold;
+    background-color:var(--orange);
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+

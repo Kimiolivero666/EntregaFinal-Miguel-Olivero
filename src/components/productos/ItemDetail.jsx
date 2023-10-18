@@ -1,25 +1,27 @@
 import { Container, Row, Col, } from "react-bootstrap"
 import ItenCount from "../itemCount/ItenCount"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { CartContext } from "../context/CartContext"
+
 
 
 const ItemDetail = ({ item }) => {
+
+  const { cart, agregarAlCarrito } = useContext(CartContext)
+  console.log(cart)
+
   const [quantity, setQuantity] = useState(1)
 
 
   const handleRestar = () => {
-      quantity > 1 && setQuantity(quantity - 1) 
+    quantity > 1 && setQuantity(quantity - 1)
   }
-  
+
   const handlerSumar = () => {
-      quantity < item.stock && setQuantity(quantity + 1)
-  } 
-
-  const handlerAgregar = () => {
-    console.log({...item, quantity})
-  
+    quantity < item.stock && setQuantity(quantity + 1)
   }
 
+  
   return (
     <Container>
       <Row>
@@ -33,10 +35,11 @@ const ItemDetail = ({ item }) => {
             <p className="categoria">categoría: <strong>{item.category}</strong></p>
             <p>productos en stock: {item.stock}</p>
             <p >precio: <span className="precio-detail">€ {item.price}</span></p>
-            <ItenCount quantity={quantity} handlerSumar={handlerSumar} handleRestar={handleRestar} handlerAgregar={handlerAgregar}/>
+            
+            <ItenCount  quantity={quantity} handlerSumar={handlerSumar} handleRestar={handleRestar} handlerAgregar={()=>{ agregarAlCarrito(item, quantity)}} />
+            
           </div>
         </Col>
-
       </Row>
     </Container>
   )

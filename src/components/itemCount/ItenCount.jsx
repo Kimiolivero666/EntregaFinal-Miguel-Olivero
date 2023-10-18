@@ -1,6 +1,7 @@
 
 import {  Button } from "react-bootstrap"
 import  '../../stylesheets/itemCount.css'
+import { Link } from "react-router-dom"
 
 
 const ItenCount = ({quantity, handleRestar,handlerSumar, handlerAgregar }) => {
@@ -16,7 +17,9 @@ const ItenCount = ({quantity, handleRestar,handlerSumar, handlerAgregar }) => {
             </div>
         </div>
         <div>
+            <Link to={'/cart'}>
         <Button className="btn-detail px-5 my-5" variant="warning" onClick={handlerAgregar}>¡Compra ahora!</Button>
+        </Link>
         </div>
     </div>
   )

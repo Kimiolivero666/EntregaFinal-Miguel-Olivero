@@ -22,8 +22,9 @@ const Navbar2 = () => {
       
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto">
-            <Nav.Link as={Link} to={"/"} className='text-white link' href="#home">Inicio</Nav.Link>
-            <Nav.Link as={Link} to={"/productos"} className='text-white link' href="#link">Productos</Nav.Link>
+            <Nav.Link as={Link} to={"/celular"} className='text-white link' href="#home">Inicio</Nav.Link>
+            <Nav.Link as={Link} to={"/productos/celular"} className='text-white link' href="#link">Productos</Nav.Link>
+            <Nav.Link as={Link} to={"/productos/TvyAudio"} className='text-white link' href="#link">Smarth tv</Nav.Link>
             <Nav.Link className='text-white link' href="#link">Blogs</Nav.Link>
             <Nav.Link className='text-white link' href="#link">Contacto</Nav.Link>
           </Nav>

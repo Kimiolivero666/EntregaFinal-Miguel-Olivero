@@ -9,7 +9,8 @@ import pc from '../assets/pc.jpg';
 import auricular from '../assets/auricular.jpg';
 import heladera from '../assets/heladera.jpg';
 import '../stylesheets/inicio.css';
-import Slider from '../components/inicio/Slider';
+import ItemListContainer from '../components/productos/ItemListContainer';
+import mac from '../assets/mac.webp'
 
 
 
@@ -62,56 +63,59 @@ const Inicio = () => {
             </Col>
           </Row>
 
-          <div className="mt-5 my-3">
-          <Row>
-            <Col md={3}>
-          <div className="box d-flex p-3 mb-3">
-            <div className="icon">
-              <i className="fa-solid fa-truck"></i>
-            </div>
-            <div className="detail text-center">
-              <h3>Envío gratis</h3>
-              <p>Apartir de los € 1000</p>
-            </div>
-          </div>
-          </Col>
-          <Col md={3}>
-          <div className="box d-flex p-3 mb-3">
-            <div className="icon">
-              <i className="fa-solid fa-euro-sign"></i>
-            </div>
-            <div className="detail text-center">
-              <h3>Devolución y reembolso</h3>
-              <p>Garantía</p>
-            </div>
-          </div>
-          </Col>
-          <Col md={3}>
-          <div className="box d-flex p-3 mb-3">
-            <div className="icon">
-              <i className="fa-solid fa-percent"></i>
-            </div>
-            <div className="detail text-center">
-              <h3>Descuento para miembros</h3>
-              <p>En cada compra</p>
-            </div>
-          </div>
-          </Col>
-          <Col md={3}>
-          <div className="box d-flex p-3 mb-3">
-            <div className="icon">
-              <i className="fa-solid fa-headphones"></i>
-            </div>
-            <div className="detail text-center">
-              <h3>Atención al cliente</h3>
-              <p>Todos los dias</p>
-            </div>
-          </div>
-          </Col>
-        </Row>
-        </div>
-          <Slider />
+          <div className="mt-5 my-3 contenedor-cajas">
+            <Row>
 
+              <Col md={3}>
+                <div className="box d-flex p-3 mb-3">
+                  <div className="icon">
+                    <i className="fa-solid fa-truck"></i>
+                  </div>
+                  <div className="detail text-center">
+                    <h3>Envío gratis</h3>
+                    <p>Apartir de los € 1000</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="box d-flex p-3 mb-3">
+                  <div className="icon">
+                    <i className="fa-solid fa-euro-sign"></i>
+                  </div>
+                  <div className="detail text-center">
+                    <h3>Devolución y reembolso</h3>
+                    <p>Garantía</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="box d-flex p-3 mb-3">
+                  <div className="icon">
+                    <i className="fa-solid fa-percent"></i>
+                  </div>
+                  <div className="detail text-center">
+                    <h3>Descuento para miembros</h3>
+                    <p>En cada compra</p>
+                  </div>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div className="box d-flex p-3 mb-3">
+                  <div className="icon">
+                    <i className="fa-solid fa-headphones"></i>
+                  </div>
+                  <div className="detail text-center">
+                    <h3>Atención al cliente</h3>
+                    <p>Todos los dias</p>
+                  </div>
+                </div>
+              </Col>
+            </Row>
+          </div>
+          <div className="contenedor-productos">
+            <ItemListContainer />
+          </div>
+          <img src={mac} alt="" />
         </section>
       </Container>
     </div>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react"
-import { pedirItemPorId } from "./AsyncMock";
 import ItemDetail from '../productos/ItemDetail'
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../firebase/data";
 
 const ItemDetailConteiner = () => {
 
@@ -9,11 +10,14 @@ const ItemDetailConteiner = () => {
     const id = useParams().id;
 
     useEffect(() => {
-    pedirItemPorId(id)
+
+const docRef = doc(db, 'productos', id)
+getDoc(docRef).then((snapshot) =>{
+  setItem(
+    { ...snapshot.data(),id: snapshot.id}
+  )
+})
     
-    .then((res)=>{
-        setItem(res);
-    })
     }, [id])
     
   return (
