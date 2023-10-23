@@ -7,10 +7,11 @@ import iphone from '../assets/iphone12.jpg';
 import portatil from '../assets/portatil.samsung.jpg';
 import pc from '../assets/pc.jpg';
 import auricular from '../assets/auricular.jpg';
-import heladera from '../assets/heladera.jpg';
+import monitor from '../assets/monitor.jpg';
 import '../stylesheets/inicio.css';
-import ItemListContainer from '../components/productos/ItemListContainer';
 import mac from '../assets/mac.webp'
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -28,37 +29,37 @@ const Inicio = () => {
             <Col xs={6} md={2} >
               <div className='mt-5 text-center'>
                 <img className='img-category mb-3' src={tvCategory} alt="" />
-                <h5 className='text-center title-category'>TV y Audio</h5>
+                <h5> <Link to={"/productos/smart"} className='text-center title-category'>Smarts</Link></h5>
               </div>
             </Col>
             <Col xs={6} md={2}>
               <div className='mt-5 text-center'>
                 <img className='img-category mb-3' src={iphone} alt="" />
-                <h5 className='text-center title-category'>Smartphones</h5>
+                <h5>  <Link to={"/productos/smartphone"} className='text-center title-category'>Smartphones</Link></h5>
               </div>
             </Col>
             <Col xs={6} md={2} >
               <div className='mt-5 text-center'>
                 <img className='img-category mb-3' src={portatil} alt="" />
-                <h5 className='text-center title-category'>Ordenadores</h5>
+                <h5><Link to={"/productos/laptop"} className='text-center title-category'>Laptops</Link></h5>
               </div>
             </Col>
             <Col xs={6} md={2} >
               <div className='mt-5 text-center'>
                 <img className='img-category mb-3' src={pc} alt="" />
-                <h5 className='text-center title-category'>PC</h5>
+                <h5> <Link to={"/productos/pc"} className='text-center title-category'>PC</Link></h5>
               </div>
             </Col>
             <Col xs={6} md={2} >
               <div className='mt-5 text-center'>
                 <img className='img-category mb-3' src={auricular} alt="" />
-                <h5 className='text-center title-category'>Games y Streaming</h5>
+                <h5><Link to={"/productos/gamer"} className='text-center title-category'>Games y Streaming</Link></h5>
               </div>
             </Col>
             <Col xs={6} md={2} >
               <div className='mt-5 text-center'>
-                <img className='img-category mb-3' src={heladera} alt="" />
-                <h5 className='text-center title-category'>Hogar</h5>
+                <img className='img-category mb-3' src={monitor} alt="" />
+                <h5><Link to={"/productos/monitor"} className='text-center title-category'>Monitores</Link></h5>
               </div>
             </Col>
           </Row>
@@ -113,9 +114,19 @@ const Inicio = () => {
             </Row>
           </div>
           <div className="contenedor-productos">
-            <ItemListContainer />
+
+
           </div>
-          <img src={mac} alt="" />
+          <Row>
+            <Col md={12}>
+              <div className='img-i'>
+                <h2>jjj</h2>
+                <img  src={mac} alt="" />
+              </div>
+
+            </Col>
+          </Row>
+
         </section>
       </Container>
     </div>

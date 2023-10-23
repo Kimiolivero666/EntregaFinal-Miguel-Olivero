@@ -15,6 +15,7 @@
 .title-category{
     cursor: pointer;
     color: var(--LightBlueHover);
+    text-decoration: none;
 }
 
 .contenedor-cajas{
@@ -46,4 +47,11 @@
 .contenedor-productos{
     margin-right: 10%;
     margin-left: 10%;
+}
+
+.img-i{
+    background-color: aqua;
+}
+.img-i img{
+    width: 100%;
 }

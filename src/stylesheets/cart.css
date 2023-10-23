@@ -24,6 +24,7 @@
 
 .img-cart{
     width: 200px;
+    padding: 50px;
 }
 .precio-total-producto{
     font-size: 20px;
@@ -54,4 +55,24 @@
 }
 .precio-total-pagar{
     font-size: 30px;
+}
+
+.btn-eliminar-volver{
+display: flex;
+justify-content: space-between;
+}
+
+
+.eliminar-compra{
+    background-color: transparent;
+    border: none;
+    color: var(--yellow1);
+    font-size: 20px;
+}
+
+.volver-inicio{
+    text-decoration: none;
+    color: var(--yellow1);
+    font-size: 20px;
+    
 }
