@@ -3,7 +3,8 @@ import ItemList from "./ItemList"
 import { collection, getDocs, query, where, } from 'firebase/firestore'
 import { db } from '../../firebase/data'
 import { useParams } from "react-router-dom"
-import { Container } from "react-bootstrap"
+import { Container, } from "react-bootstrap"
+
 
 
 
@@ -18,9 +19,6 @@ const ItemListContainer = ({ greeting }) => {
 
   useEffect(() => {
 
-
-
-
     const productosRef = collection(db, 'productos')
 
     const q = query(productosRef, where('category', '==', category))
@@ -31,6 +29,7 @@ const ItemListContainer = ({ greeting }) => {
           return {
             id: doc.id,
             ...doc.data()
+
           }
         }))
       }
@@ -39,10 +38,22 @@ const ItemListContainer = ({ greeting }) => {
 
 
   }, [category]
+
+ 
   )
+
+  
+
+  
+
+  
   return (
+
+        
+
     <>
       <Container>
+        
         <h1>{greeting}</h1>
         <section className="mt-5 mb-5 productos">
           <ItemList products={products} />

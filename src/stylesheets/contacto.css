@@ -1,13 +1,25 @@
+
+
+.title-contacto h1{
+    font-size: 50px;
+    color: var(--blue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
 .form-div {
     background-color: rgba(72, 72, 72, 0.4);
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 35px;
     padding-bottom: 50px;
-    width: 450px;
+    width: 100%;
     left: 50%;
     margin-top: 30px;
-
 }
 
 .feedback-input {

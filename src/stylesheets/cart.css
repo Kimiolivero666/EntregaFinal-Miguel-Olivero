@@ -49,6 +49,9 @@
     margin-top: 60px;
     cursor: pointer;
 }
+.option-cart:hover{
+    background-color: var(--yellowHower);
+}
 
 .total-pagar{
     font-size: 20px;

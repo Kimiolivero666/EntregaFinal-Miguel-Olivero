@@ -117,10 +117,11 @@ const Inicio = () => {
 
 
           </div>
+        
           <Row>
             <Col md={12}>
               <div className='img-i'>
-                <h2>jjj</h2>
+          
                 <img  src={mac} alt="" />
               </div>
 

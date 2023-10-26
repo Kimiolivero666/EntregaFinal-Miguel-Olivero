@@ -10,8 +10,7 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const Cart = () => {
 
-  const { cart, precioTotal, vaciarCart, } = useContext(CartContext)
-
+  const { cart, precioTotal, vaciarCart,} = useContext(CartContext)
 
 
   const handlerVaciar = () => {
