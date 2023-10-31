@@ -1,46 +1,49 @@
-
-
-.container-cart{
+.container-cart {
     border: solid var(--grey) 1px;
 }
-.title-cart{
+
+.title-cart {
     font-size: 23px;
 }
-.title-precio-unitario{
-    color: var(--LightBlueHover); 
+
+.title-precio-unitario {
+    color: var(--LightBlueHover);
 }
-.precio-unitario{
+
+.precio-unitario {
     font-size: 15px;
     color: var(--LightBlueHover);
 }
-.eliminar-producto{
-    color:var(--yellow1);
+
+.eliminar-producto {
+    color: var(--yellow1);
     background-color: transparent;
     border: none;
-    
+
 }
 
 
 
-.img-cart{
+.img-cart {
     width: 200px;
     padding: 50px;
 }
-.precio-total-producto{
+
+.precio-total-producto {
     font-size: 20px;
     font-weight: bold;
     margin-right: 20PX;
 }
 
-.precio-total{
-    border: solid var(--grey) 1px; 
+.precio-total {
+    border: solid var(--grey) 1px;
 }
 
-.option-cart{
+.option-cart {
     background-color: var(--yellow1);
     color: var(--blue);
     text-decoration: none;
-    font-weight:500;
+    font-weight: 500;
     font-size: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -49,33 +52,60 @@
     margin-top: 60px;
     cursor: pointer;
 }
-.option-cart:hover{
+
+.option-cart:hover {
     background-color: var(--yellowHower);
 }
 
-.total-pagar{
+.total-pagar {
     font-size: 20px;
 }
-.precio-total-pagar{
+
+.precio-total-pagar {
     font-size: 30px;
 }
 
-.btn-eliminar-volver{
-display: flex;
-justify-content: space-between;
+.btn-eliminar-volver {
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.eliminar-compra{
+.eliminar-compra {
     background-color: transparent;
     border: none;
     color: var(--yellow1);
     font-size: 20px;
 }
 
-.volver-inicio{
+.volver-inicio {
     text-decoration: none;
     color: var(--yellow1);
     font-size: 20px;
-    
+
+}
+
+.no-hay-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-hay-productos h1 {
+    font-size: 42px;
+    color: var(--blue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.no-hay-productos .btn-no-hay-productos {
+    font-size: 22px;
+    color: var(--yellow1);
+    text-transform: uppercase;
+    margin-bottom: 10%;
+    text-decoration: none;
 }

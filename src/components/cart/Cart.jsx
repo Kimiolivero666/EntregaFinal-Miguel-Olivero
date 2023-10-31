@@ -12,14 +12,24 @@ const Cart = () => {
 
   const { cart, precioTotal, vaciarCart, eliminarDelCarrito} = useContext(CartContext)
 
+  const totalActual = precioTotal();
+
   const handlerEliminarProducto = (productId) => {
     eliminarDelCarrito(productId);
   }
 
-
-
   const handlerVaciar = () => {
-    vaciarCart()
+    vaciarCart();
+    window.location.href = '/';
+  }
+
+  if (totalActual === 0) {
+    return (
+      <div className="no-hay-productos">
+        <h1>No hay productos en el carrito</h1>
+        <Link to={'/'} className="btn-no-hay-productos">Volver</Link>
+      </div>
+    );
   }
 
   return (
