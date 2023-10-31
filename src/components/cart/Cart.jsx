@@ -10,7 +10,12 @@ import { Container, Row, Col } from "react-bootstrap"
 
 const Cart = () => {
 
-  const { cart, precioTotal, vaciarCart,} = useContext(CartContext)
+  const { cart, precioTotal, vaciarCart, eliminarDelCarrito} = useContext(CartContext)
+
+  const handlerEliminarProducto = (productId) => {
+    eliminarDelCarrito(productId);
+  }
+
 
 
   const handlerVaciar = () => {
@@ -32,7 +37,7 @@ const Cart = () => {
                     <div>
                       <h2 className="title-cart mt-5">{prod.name}</h2>
                       <p className="title-precio-unitario">Precio unitario: <span className="precio-unitario">€  {prod.price}</span></p>
-                      <button className="eliminar-producto">eliminar producto</button>
+                      <button className="eliminar-producto" onClick={() => handlerEliminarProducto(prod.id)}>eliminar producto</button>
                     </div>
                     <div className="mt-5">
                       <p>Cant: {prod.quantity}</p>
