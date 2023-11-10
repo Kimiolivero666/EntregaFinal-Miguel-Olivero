@@ -13,7 +13,11 @@ const CheckOut = () => {
 
   const { cart, precioTotal, vaciarCart, } = useContext(CartContext)
 
-  const { register, handleSubmit } = useForm()
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    mode: "onBlur"
+  });
+
+
   const comprar = (data) => {
     const pedido = {
       cliente: data,
@@ -54,20 +58,24 @@ const CheckOut = () => {
             <div className="form-div mb-5">
               <form className="form" onSubmit={handleSubmit(comprar)} >
                 <p className="name">
-                  <input type="text" className="validate feedback-input" placeholder="Nombre"  {...register('name')} />
+                  <input type="text" className="validate feedback-input" placeholder="Nombre"  {...register('name', { required: true })} />
+                  {errors.name && <span>Este campo es obligatorio</span>}
                 </p>
                 <p className="last-name">
-                  <input type="text" className="validate feedback-input" placeholder="Apellido"  {...register('last-name')} />
-                </p>
+                  <input type="text" className="validate feedback-input" placeholder="Apellido"  {...register('last-name', { required: true })} />
+                  {errors['last-name'] && <span>Este campo es obligatorio</span>}
+              </p>
                 <p className="email">
-                  <input type="text" className="validate feedback-input" placeholder="Email" {...register('email')} />
+                  <input type="text" className="validate feedback-input" placeholder="Email" {...register('email', { required: true })} />
+                  {errors.email && <span>Este campo es obligatorio</span>}
                 </p>
                 <p className="contraseña">
-                  <input type="password" className="validate feedback-input" placeholder="Contraseña" {...register('contraseña')} />
+                  <input type="password" className="validate feedback-input" placeholder="Contraseña" {...register('contraseña', { required: true })} />
+                  {errors.contraseña && <span>Este campo es obligatorio</span>}
                 </p>
 
                 <div className="submit">
-                  <input type="submit" value="CREAR CUENTA" id="button-blue" />
+                  <input type="submit" value="CREAR CUENTA" id="button-blue" disabled={Object.keys(errors).length > 0}/>
                   <div className="ease"></div>
                 </div>
               </form>
